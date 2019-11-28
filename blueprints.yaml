@@ -1,0 +1,31 @@
+name: Platform Feeder
+version: 0.1.0
+description: Feed data from CrowdProperty platform
+icon: plug
+author:
+  name: Andrej Morozov
+  email: keedle@icloud.com
+homepage: https://github.com/keedle/grav-plugin-platform-feeder
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/keedle/grav-plugin-platform-feeder/issues
+docs: https://github.com/keedle/grav-plugin-platform-feeder/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_PLATFORM_FEEDER.TEXT_VARIABLE
+      help: PLUGIN_PLATFORM_FEEDER.TEXT_VARIABLE_HELP
